@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+    rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/reset.css">
+
+    <script src="https://unpkg.com/just-validate@latest/dist/just-validate.production.min.js"></script>
+
+    <script src="jquery-3.7.1.min"></script>
+    <script src="jquery.maskedinput-master/dist/jquery.maskedinput.js" type="text/javascript"></script>
+
+    <script src="inputmask.min.js"></script>
+
+    <script src="https://unpkg.com/just-validate@latest/dist/just-validate.production.min.js"></script>
+    <title>Строительная компания "Стимул"</title>
+</head>
+<body>
+
+ <div class="wrapper">
+    <header id="header-main"  class="header header-main">
+        <div class="container">
+            <div class="header__inner">
+                <a href="index.html" class="logo">
+                    <img src="stim.png" alt="Stimul" width="190" height="65"  loading="lazy">  
+                </a>
+                <nav class="menu">
+                    <button class="menu__btn">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                    <ul class="menu__list">
+                        <li class="menu__item"><a href="company.html" class="menu__link">Компания</a></li>
+                        <li class="menu__item"><a href="#services" class="menu__link">Услуги</a></li>
+                        <li class="menu__item"><a href="#project" class="menu__link">Наши проекты</a></li>
+                        <li class="menu__item"><a href="contacts.html" class="menu__link">Контакты</a></li>
+                    </ul>
+                </nav>
+
+                <div class="button">
+                    <a href="#" class="buttonmain" id="open__pop__up">Заказать звонок</a>
+                </div>
+
+                <div class="pop__up" id="pop__up">
+
+                    <div class="pop__up__container">
+                        <div class="pop__up__body" id="pop__up__body">
+                            <h5>Заказать звонок</h5>
+                            <p class="p__text">Оставьте контактные данные и мы обязательно свяжемся с вами.</p>
+                            
+                            <form action="" id="formmain" class="formmain" autocomplete="off">
+                            <div class="form__input-box">
+                                <input type="text" id="main_name" name="main_name" autocomplete="off" 
+                                placeholder="Имя*">
+                            </div>
+                            <div class="form__input-box">
+                                <input type="text"  id="main_tel" name="main_tel" autocomplete="off"
+                                class="phone1" 
+                               placeholder="Телефон*">
+                            </div>
+                                <button class="resentBtn">Отправить</button>
+                                <p class="Pp__text"> Нажимая на кнопку, вы даете согласие на обработку персональных данных в соответствии с ФЗ №152 от 27.07.2006. </p>
+                            </form>
+                            <div class="pop__up__close" id="pop__up__close" onclick="myFunction()" value="Resent form">&#215</div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </header>
+    
+    <main class="main">
+
+        <div class="slider">
+            <div id="slider1" class="swiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide" style="background-image: url(Pictures/Sw1.jpeg);">
+                    <div class="about__top">
+                    <h1 class="about__title">Промышленные полы <br> по всей России</h1>
+                    <p class="about__text">Строительная компания ООО "СТИМУЛ": качество, надежность, результат!</p>
+                </div>
+                  </div>
+                  <div class="swiper-slide" style="background-image: url(Pictures/Sw2.jpeg);">
+                    <div class="about__top">
+                    <h1 class="about__title">Аренда строительной <br> техники</h1>
+                    <p class="about__text">Строительная компания ООО "СТИМУЛ": качество, надежность, результат!</p>
+                </div>
+                  </div>
+                  <div class="swiper-slide" style="background-image: url(Pictures/Sw3.jpeg);">
+                    <div class="about__top">
+                        <h1 class="about__title">Промышленные полы<br>по всей России</h1>
+                        <p class="about__text">Строительная компания ООО "СТИМУЛ": качество, надежность, результат!</p>
+                    </div>
+                  </div>
+                  <div class="swiper-slide" style="background-image: url(Pictures/Sw4.jpeg);">
+                    <div class="about__top">
+                        <h1 class="about__title" >Аренда строительной <br> техники</h1>
+                        <p class="about__text">Строительная компания ООО "СТИМУЛ": качество, надежность, результат!</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-pagination"></div>
+              </div>
+        </div>
+
+        <section class="achievements">
+            <div class="container">
+                <ul class="achievements__list">
+                    <li class="achievements__item">
+                        <span class="achievements__item-icon"><i class="ri-building-line"></i></span>
+                        <h3 class="achievements__item-title">120 +</h3>
+                        <p class="achievements__item-text">Более 120 реализованных, успешных проектов, в которых мы выполнили работу</p>
+                    </li>
+
+                    <li class="achievements__item">
+                        <span class="achievements__item-icon"><i class="ri-settings-3-line"></i></span>
+                        <h3 class="achievements__item-title">Оборудование</h3>
+                        <p class="achievements__item-text">Своя современная техника и оборудование</p>
+                    </li> 
+
+                    <li class="achievements__item">
+                        <span class="achievements__item-icon"><i class="ri-calendar-schedule-line"></i></span>
+                        <h3 class="achievements__item-title">Сроки</h3>
+                        <p class="achievements__item-text">Выполняем работы в строго оговоренный срок</p>
+                    </li> 
+
+                    <li class="achievements__itemm">
+                        <span class="achievements__item-icon"><i class="ri-award-fill"></i></span>
+                        <h3 class="achievements__item-title">Гарантия 5 лет</h3>
+                        <p class="achievements__item-text">Предоставляем гарантию на наши выполненные работы 5 лет</p>
+                    </li> 
+
+                    <li class="achievements__itemm">
+                        <span class="achievements__item-icon"><i class="ri-user-follow-line"></i></span>
+                        <h3 class="achievements__item-title">Опытные специалисты</h3>
+                        <p class="achievements__item-text">Наши специалисты обладают высокой квалификацией и многолетним опытом работы</p>
+                    </li> 
+                </ul>
+            </div>
+        </section>
+
+        <hr class="hr">
+
+        <div id="back_to_top" class="back_to_top">
+            <span><i class="ri-arrow-up-line"></i></span>
+        </div>
+
+        <section class="advantage">
+            <div class="container">
+               <div class="advantage__inner">
+                <h2 class="section-title">На <b class="bold">100%</b> решаем
+                    поставленные задачи</h2>
+                <p class="advantage__text">Компания СТИМУЛ выполняет устройство промышленных полов по всей России</p>
+                <h4 class="advantage__title">ПРЕИМУЩЕСТВА РАБОТЫ С НАМИ</h4>
+                <ol class="advantage__list">
+                    <li class="advantage__item">СТИМУЛ  – это команда специалистов, профессионально выполняющих свою работу</li>
+                    <li class="advantage__item">Долговечность, износостойкость, прочность и ровная поверхность полов</li>
+                    <li class="advantage__item">Соблюдаем все технологии заливки промышленных полов, что позволяет продлить срок службы пола</li>
+                    <li class="advantage__item">Уверенно берёмся за технологические вопросы любой сложности</li>
+                    <li class="advantage__item">Наши специалисты доступны 24/7
+                        <div id="services"></div>
+                    </li>
+                </ol>
+               </div> 
+            </div>
+        </section>
+
+        <hr class="hr2">
+
+        <section class="section__container services__container">
+            <h4 class="services__title">Услуги</h4>
+            <p class="services__textt">Предоставляем комплексные услуги под ключ любой сложности по устройству и восстановлению промышленных полов для объектов любого типа: полы для паркинга, склада, ангара, завода, промышленных зданий, полы для офиса, магазинов, торговых центров, гаражей, автосервиса, СТО. 
+            </p>
+
+            <p class="services__text">Так же у нас в арсенале есть все необходимое оборудование, которое можно взять в аренду.</p>
+            <div class="services__grid">
+                <div class="services__card">
+                    <img class="services__card-img" src="Pictures/serv1.jpeg" width="95" height="95" alt="изображение полов">
+                    <h4>Устройство ж/б пола</h4>
+                    <p> Виды полов: бетонные полы, полимерные полы, топпинговые полы, наливные полы. </p>
+                    <div class="serv__btn">
+                        <a href="#" id="servopen__pop__up">Узнать стоимость</a>
+                    </div>
+                </div>
+
+                <div class="serpop__up" id="serpop__up">
+
+                    <div class="pop__up__sercontainer">
+                        <div class="pop__up__serbody" id="pop__up__serbody">
+                            <h5>Заказать расчет</h5>
+                         <p class="serv__p">Менеджеры компании с радостью ответят на ваши вопросы и произведут расчет стоимости услуг.</p>
+                          
+                            <form action="" id="formserv" class="formserv" autocomplete="off">
+                                <span class="popspan">Имя<sup>*</sup></span>
+                                <input type="text" id="serv_name" name="serv_name" autocomplete="off" placeholder="">
+                                <span class="popspan">Телефон<sup>*</sup></span>
+                                <input type="text" class="phone2" id="serv_tel" name="serv_tel" autocomplete="off" placeholder="+7(___) ___-__-__">
+                                <span class="popspan">Услуга</span>
+                                <input type="text" value="Устройство ж/б пола" readonly>
+                                <span class="popspan">Сообщение</span>
+                                <textarea class="form__serv" name="message" placeholder=""></textarea>
+
+                                <button>Отправить</button>
+
+                                <p class="serv__pP"> Нажимая на кнопку, вы даете согласие на обработку персональных данных в соответствии с ФЗ №152 от 27.07.2006. </p>
+                                
+                            </form>
+                            <div class="pop__up__serclose" id="pop__up__serclose" onclick="servFunction()" value="Resent form">&#215</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="services__card">
+                    <img class="services__card-img" src="Pictures/serv2.jpeg" width="95" height="95" alt="изображение ремонт полов">
+                    <h4>Ремонт полов</h4>
+                    <p> Выполняем ремонт всех видов промышленных полов и покрытий.</p>
+                    <div class="serv__btnn">
+                        <a href="#" id="servopenn__pop__up">Узнать стоимость</a>
+                    </div>
+                </div>
+
+                <div class="servpop__up" id="servpop__up">
+
+                    <div class="pop__up__servcontainer">
+                        <div class="pop__up__servbody" id="pop__up__servbody">
+                            <h5>Заказать расчет</h5>
+                         <p class="serv__p">Менеджеры компании с радостью ответят на ваши вопросы и произведут расчет стоимости услуг.</p>
+                          
+                            <form action="" id="formserv2" class="formserv2" autocomplete="off">
+                                <span class="popspann">Имя<sup>*</sup></span>
+                                <input type="text" id="serv2_name" name="serv2_name" autocomplete="off" required placeholder="">
+                                <span class="popspann">Телефон<sup>*</sup></span>
+                                <input type="text" id="serv2_tel" name="serv2_tel" autocomplete="off" class="phone3" required placeholder="+7(___) ___-__-__">
+                                <span class="popspann">Услуга</span>
+                                <input type="text" value="Ремонт полов" readonly>
+                                <span class="popspann">Сообщение</span>
+                                <textarea class="form__servv" name="message" placeholder=""></textarea>
+
+                                <button>Отправить</button>
+
+                                <p class="serv__pP"> Нажимая на кнопку, вы даете согласие на обработку персональных данных в соответствии с ФЗ №152 от 27.07.2006. </p>
+                                
+                            </form>
+                            <div class="pop__up__servclose" id="pop__up__servclose" onclick="serviFunction()" value="Resent form">&#215</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="services__card">
+                    <img class="services__card-img" src="Pictures/Serv3.jpeg" width="85" height="90" alt="изображение оборудования">
+                    <h4>Аренда строительной техники</h4>
+                    <p> Двухроторные вертолеты, однороторные вертолеты, бетоноукладчики, экскаватор погрузчик JCB. 
+                    </p>
+                    <div id="project"></div>
+                    <div class="serv__btnnn">
+                        <a href="#" id="servopennn__pop__up">Узнать стоимость</a>
+                    </div>
+                </div>
+
+                <div class="servicpop__up" id="servicpop__up">
+
+                    <div class="pop__up__serviccontainer">
+                        <div class="pop__up__servicbody" id="pop__up__servicbody">
+                            <h5>Заказать расчет</h5>
+                         <p class="serv__p">Менеджеры компании с радостью ответят на ваши вопросы и произведут расчет стоимости услуг.</p>
+                          
+                            <form action="" id="formserv3" class="formserv3" autocomplete="off">
+                                <span class="popspannn">Имя<sup>*</sup></span>
+                                <input type="text" id="serv3_name" name="serv3_name" autocomplete="off" required placeholder="">
+                                <span class="popspannn">Телефон<sup>*</sup></span>
+                                <input type="text" id="serv3_tel" name="serv3_tel" autocomplete="off" class="phone4" required placeholder="+7(___) ___-__-__">
+                                <span class="popspannn">Услуга</span>
+                                <input type="text" value="Аренда строительной техники" readonly>
+                                <span class="popspannn">Сообщение</span>
+                                <textarea class="form__servvv" name="message" placeholder=""></textarea>
+
+                                <button>Отправить</button>
+
+                                <p class="serv__pP"> Нажимая на кнопку, вы даете согласие на обработку персональных данных в соответствии с ФЗ №152 от 27.07.2006. </p>
+                                
+                            </form>
+                            <div class="pop__up__servicclose" id="pop__up__servicclose" onclick="servicFunction()" value="Resent form">&#215</div>
+                        </div>
+                    </div>
+                </div>
+                
+                
+            </div>
+            <hr class="hr3">
+        </section>
+
+<div  class="project__section">
+
+     <p class="project__text">Галерея</p>
+    <h4 class="project__title">Наши проекты</h4>
+
+    <div class="gallery">
+        <div class="gallery__navigation">
+            <button class="gallery__btn gallery__btn__prev">
+               <span><i class="ri-arrow-left-wide-line"></i></span>
+            </button>
+            <button class="gallery__btn gallery__btn__next">
+                <span><i class="ri-arrow-right-wide-line"></i></span>
+            </button>
+        </div>
+        <div id="slider2" class="swiper project__swiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide hit__item">
+                    <div class="project__box">
+                            <img src="Pictures/Proj1.jpg" 
+                            width="500" height="300"  
+                            alt="Изображение проектов">
+                
+                            <h4 class="type">Объект:</h4>
+                            <p class="place">Складской комплекс г. Тамбов</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide hit__item">
+                        <div class="project__box">
+                            <img src="Pictures/Proj2.jpeg" 
+                            width="500" height="300"  
+                            alt="Изображение проектов">
+                
+                            <h4 class="type">Объект:</h4>
+                            <p class="place">Складской комплекс г. Владимир</p>
+                        </div>
+                </div>
+                <div class="swiper-slide hit__item">
+                    <div class="project__box">
+                        <img src="Pictures/Proj1.jpg" 
+                        width="500" height="300"  
+                        alt="Изображение проектов">
+            
+                        <h4 class="type">Объект:</h4>
+                        <p class="place">Складской комплекс г. Рязань</p>
+                    </div>
+            </div>
+            <div class="swiper-slide hit__item">
+                <div class="project__box">
+                    <img src="Pictures/Proj1.jpg" 
+                    width="500" height="300"  
+                    alt="Изображение проектов">
+        
+                    <h4 class="type">Объект:</h4>
+                    <p class="place">Складской комплекс г. Воронеж</p>
+                </div>
+            </div>
+            <div class="swiper-slide hit__item">
+                <div class="project__box">
+                    <img src="Pictures/Proj1.jpg" 
+                    width="500" height="300"  
+                    alt="Изображение проектов">
+
+                    <h4 class="type">Объект:</h4>
+                    <p class="place">Складской комплекс г. </p>
+                </div>
+            </div>
+            <div class="swiper-slide hit__item">
+                <div class="project__box">
+                    <img src="Pictures/Proj1.jpg" 
+                    width="500" height="300"  
+                    alt="Изображение проектов">
+        
+                
+                    <p class="place">Складской комплекс г. Тамбов</p>
+                </div>
+            </div>
+
+                </div>
+            </div>
+    </div>
+      </div>
+
+
+</main>
+
+
+<footer class="footer">
+    <div class="footer__container">
+        <div class="footer__top">
+            <div class="footer__elementt">
+                <p class="footer__element-title">Навигация</p>
+                <ul class="footer__list">
+                    <li class="footer__item">
+                        <a class="footer__link" href="company.html">Компания</a>
+                    </li>
+                    <li class="footer__item">
+                        <a class="footer__link" href="#services">Услуги</a>
+                    </li>
+                    <li class="footer__item">
+                        <a class="footer__link" href="#project">Наши проекты</a>
+                    </li>
+                    <li class="footer__item">
+                        <a class="footer__link" href="contacts.html">Контакты</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer__element">
+                <p class="footer__element-titlee">Адрес</p>
+                <ul class="footer__listt">
+                    <li class="footer__itemm">
+                        <span><i class="ri-map-pin-line"></i></span> 
+                        <p class="footer-p">г. Орёл, ул. Гайдара, стр. 54, оф. 2103-2105</p>
+                        
+                    </li>
+                </ul>
+            </div>
+            <div class="footer__element">
+                <p class="footer__element-titlee">Контакты</p>
+                <ul class="footer__list">
+                    <li class="footer__item">
+                        <span><i class="ri-phone-line"></i></span>
+                        <a class="footer__link" href="tel:+79624755392">+7(962)475-53-92</a>
+                    </li>
+                    <li class="footer__item">
+                        <span><i class="ri-mail-send-line"></i></span>
+                        <a class="footer__link" href="mailto:orel.region57@yandex.ru">orel.region57@yandex.ru</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <ul class="footer__bottom">
+            <li class="footer__bottom-item">
+                <p class="footer__year">© ООО «Стимул» – Строительная компания в Орле, 2025
+                </p>
+    
+                <a class="footer__conf" href="conf.html">Политика конфиденциальности</a>
+            </li>
+        </ul>
+    </div>
+</footer>
+</div>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    
+    <script src="main.js"></script>
+</body>
+</html>
+
